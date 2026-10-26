@@ -48,7 +48,12 @@ header {
 }
 nav a { color: var(--suave); text-decoration: none; font-size: 14px; }
 nav a:hover { color: white; }
-main { width: min(1080px, calc(100% - 36px)); margin: auto; }
+
+main { 
+  width: min(1080px, calc(100% - 36px)); 
+  margin: auto; 
+}
+
 .intro {
   padding: 64px 0 46px;
   max-width: 700px;
@@ -72,6 +77,14 @@ h1 {
 .encabezado-seccion { margin-bottom: 18px; }
 h2 { margin: 0; font-size: 25px; letter-spacing: -.5px; }
 .encabezado-seccion p { margin: 5px 0 0; color: var(--suave); font-size: 14px; }
+
+/* Contenedor para múltiples juegos */
+.lista-juegos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .juego {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
@@ -163,36 +176,52 @@ footer { border-top: 1px solid #292927; padding: 22px 18px; text-align: center; 
   <section class="intro">
     <div class="mini-titulo">Un rincón para jugar</div>
     <h1>Encuentra tu próxima aventura.</h1>
-    <p>Bienvenido a Monster Games. Aquí tienes nuestro juego destacado, con su información y el acceso para jugarlo.</p>
+    <p>Bienvenido a Monster Games. Aquí tienes nuestros juegos disponibles, con su información y el acceso para jugarlos.</p>
   </section>
 
   <section class="biblioteca" id="juegos">
     <div class="encabezado-seccion">
-      <h2>Juego disponible</h2>
+      <h2>Juegos disponibles</h2>
       <p>Una selección pequeña, sin complicaciones.</p>
     </div>
 
-    <article class="juego">
-      <div class="portada">
-        <img
-          src="./Donguk logo.png"
-          alt="Portada de Donguk"
-        >
-      </div>
-      <div class="info">
-        <span class="etiqueta">JUEGO</span>
-        <h3>Donguk</h3>
-        <p class="descripcion">¡Prepárate para la acción! En Donguk, entra a un caótico shooter multijugador donde puedes disparar, sobrevivir y chatear con todos tus amigos al mismo tiempo. Creado por KnockDude (que quizás no sepa modelar en 3D, ¡pero de diversión sabe un montón!). ¿Estás listo para entrar al combate?</p>
-        <div class="datos">
-          <span>Shooter</span>
-          <span>Multijugador</span>
-          <span>Acción táctica</span>
+    <div class="lista-juegos">
+      <!-- JUEGO 1: Donguk -->
+      <article class="juego">
+        <div class="portada">
+          <img src="./Donguk logo.png" alt="Portada de Donguk">
         </div>
-        <a class="boton" href="https://donguk.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
-        <p class="descripcion" style="margin-top: 14px;">Models And Game By: KnockDude</p>
-        <p class="descripcion">(No sabe Modelar en 3D)</p>
-      </div>
-    </article>
+        <div class="info">
+          <span class="etiqueta">JUEGO</span>
+          <h3>Donguk</h3>
+          <p class="descripcion">¡Prepárate para la acción! En Donguk, entra a un caótico shooter multijugador donde puedes disparar, sobrevivir y chatear con todos tus amigos al mismo tiempo. Creado por KnockDude.</p>
+          <div class="datos">
+            <span>Shooter</span>
+            <span>Multijugador</span>
+            <span>Acción táctica</span>
+          </div>
+          <a class="boton" href="https://donguk.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
+          <p class="descripcion" style="margin-top: 14px;">Models And Game By: KnockDude</p>
+        </div>
+      </article>
+
+      <article class="juego">
+        <div class="portada" style="background: #252b3c;">
+          <img src="Bloop-Chat.png" alt="Portada Bloop">
+        </div>
+        <div class="info">
+          <span class="etiqueta">Plataforma Digital</span>
+          <h3>Bloop</h3>
+          <p class="descripcion">Conéctate, comparte y diviértete en Bloop, la plataforma social creada para reunir a tu comunidad. Chatea, publica tus momentos y descubre nuevas experiencias en un espacio dinámico y sin complicaciones.</p>
+          <div class="datos">
+            <span>Chat Social</span>
+            <span>Comunidad</span>
+          </div>
+          <a class="boton" href="https://bloop-chat-mvnc.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
+          <p class="descripcion" style="margin-top: 14px;">Created By: KnockDude</p>
+        </div>
+      </article>
+    </div>
   </section>
 </main>
 
