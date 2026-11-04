@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111111">
+
 <title>Monster Games</title>
+
 <link rel="icon" type="image/png" href="./Monster-Games-Favicon.png">
+
 <style>
 :root {
   color-scheme: dark;
@@ -78,7 +81,6 @@ h1 {
 h2 { margin: 0; font-size: 25px; letter-spacing: -.5px; }
 .encabezado-seccion p { margin: 5px 0 0; color: var(--suave); font-size: 14px; }
 
-/* Contenedor para múltiples juegos */
 .lista-juegos {
   display: flex;
   flex-direction: column;
@@ -162,85 +164,175 @@ footer { border-top: 1px solid #292927; padding: 22px 18px; text-align: center; 
 }
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="barra">
-    <a class="logo" href="#" aria-label="Monster Games, inicio">
+    <a class="logo" href="./index.html" aria-label="Monster Games, inicio">
       <img src="./Monster-Games-24-10-2026.png" alt="Monster Games">
     </a>
-    <nav><a href="#juegos">Juegos</a></nav>
+
+    <nav aria-label="Navegación principal">
+      <a href="#juegos">Juegos</a>
+    </nav>
   </div>
 </header>
 
 <main>
+
   <section class="intro">
     <div class="mini-titulo">Un rincón para jugar</div>
+
     <h1>Encuentra tu próxima aventura.</h1>
-    <p>Bienvenido a Monster Games. Aquí tienes nuestros juegos disponibles, con su información y el acceso para jugarlos.</p>
+
+    <p>
+      Bienvenido a Monster Games. Aquí tienes nuestros juegos y proyectos disponibles,
+      con su información y acceso directo.
+    </p>
   </section>
 
   <section class="biblioteca" id="juegos">
+
     <div class="encabezado-seccion">
       <h2>Juegos disponibles</h2>
       <p>Una selección pequeña, sin complicaciones.</p>
     </div>
 
     <div class="lista-juegos">
-      <!-- JUEGO 1: Donguk -->
+
+      <!-- DONGUK -->
       <article class="juego">
         <div class="portada">
-          <img src="./Donguk logo.png" alt="Portada de Donguk">
+          <img
+            src="./Donguk logo.png"
+            alt="Portada de Donguk"
+            loading="lazy"
+          >
         </div>
+
         <div class="info">
           <span class="etiqueta">JUEGO</span>
+
           <h3>Donguk</h3>
-          <p class="descripcion">¡Prepárate para la acción! En Donguk, entra a un caótico shooter multijugador donde puedes disparar, sobrevivir y chatear con todos tus amigos al mismo tiempo. Creado por KnockDude.</p>
+
+          <p class="descripcion">
+            ¡Prepárate para la acción! En Donguk, entra a un shooter
+            multijugador donde puedes jugar, sobrevivir y compartir
+            la experiencia con tus amigos. Creado por KnockDude.
+          </p>
+
           <div class="datos">
             <span>Shooter</span>
             <span>Multijugador</span>
             <span>Acción táctica</span>
           </div>
-          <a class="boton" href="https://donguk.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
-          <p class="descripcion" style="margin-top: 14px;">Models And Game By: KnockDude</p>
+
+          <a
+            class="boton"
+            href="https://donguk.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver Web ↗
+          </a>
+
+          <p class="descripcion" style="margin-top: 14px;">
+            Models And Game By: KnockDude
+          </p>
+        </div>
+      </article>
+
+      <!-- BLOOP -->
+      <article class="juego">
+        <div class="portada" style="background: #252b3c;">
+          <img
+            src="./Bloop-Chat.png"
+            alt="Portada de Bloop"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="info">
+          <span class="etiqueta">PLATAFORMA DIGITAL</span>
+
+          <h3>Bloop</h3>
+
+          <p class="descripcion">
+            Conéctate, comparte y diviértete en Bloop, la plataforma
+            social creada para reunir a tu comunidad. Chatea, publica
+            tus momentos y descubre nuevas experiencias.
+          </p>
+
+          <div class="datos">
+            <span>Chat Social</span>
+            <span>Comunidad</span>
+          </div>
+
+          <a
+            class="boton"
+            href="https://bloop-chat-mvnc.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver Web ↗
+          </a>
+
+          <p class="descripcion" style="margin-top: 14px;">
+            Created By: KnockDude
+          </p>
         </div>
       </article>
 
       <article class="juego">
         <div class="portada" style="background: #252b3c;">
-          <img src="Bloop-Chat.png" alt="Portada Bloop">
+          <img
+            src="./Faro-Explorer.png"
+            alt="Portada de Faro Explorer"
+            loading="lazy"
+          >
         </div>
+
         <div class="info">
-          <span class="etiqueta">Plataforma Digital</span>
-          <h3>Bloop</h3>
-          <p class="descripcion">Conéctate, comparte y diviértete en Bloop, la plataforma social creada para reunir a tu comunidad. Chatea, publica tus momentos y descubre nuevas experiencias en un espacio dinámico y sin complicaciones.</p>
-          <div class="datos">
-            <span>Chat Social</span>
-            <span>Comunidad</span>
-          </div>
-          <a class="boton" href="https://bloop-chat-mvnc.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
-          <p class="descripcion" style="margin-top: 14px;">Created By: KnockDude</p>
-        </div>
-      </article>
-      <article class="Juego">
-        <div class="portada" style="background: #252b3c;">
-          <img src="Bloop-Chat.png" alt="Portada Bloop">
-        </div>
-        <div class="info">
-          <span class="etiqueta">Browser</span>
+          <span class="etiqueta">BROWSER</span>
+
           <h3>Faro Explorer</h3>
-          <p class="descripcion">DISFRUTA NAVEGANDO EN FARO EXPLORER, BUSCA INFORMACION, DIVIERTETE USANDO FARO EXPLORER!!</p>
+
+          <p class="descripcion">
+            Descubre Faro Explorer, un navegador diseñado para
+            explorar Internet, buscar información y disfrutar
+            de una experiencia de navegación sencilla.
+          </p>
+
           <div class="datos">
-            <span>Browser</span>
-            <span>Buscar</span>
+            <span>Navegador</span>
+            <span>Búsqueda web</span>
+            <span>Exploración</span>
           </div>
-          <a class="boton" href="https://bloop-chat-mvnc.onrender.com/" target="_blank" rel="noopener noreferrer">Ver Web ↗</a>
-          <p class="descripcion" style="margin-top: 14px;">Created By: KnockDude</p>
+
+          <a
+            class="boton"
+            href="https://faro.browser.cl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar ↗
+          </a>
+
+          <p class="descripcion" style="margin-top: 14px;">
+            Created By: KnockDude
+          </p>
         </div>
       </article>
+
     </div>
   </section>
+
 </main>
 
-<footer>Monster Games · Hecho para disfrutar jugando.</footer>
+<footer>
+  Monster Games · Hecho para disfrutar jugando.
+</footer>
+
 </body>
 </html>
